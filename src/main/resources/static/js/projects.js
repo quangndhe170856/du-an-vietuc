@@ -1,4 +1,6 @@
-const API = "http://localhost:8080/api/projects";
+
+const BASE_URL = window.location.origin;
+const API = `${BASE_URL}/api/projects`;
 
 fetch(API)
     .then(res => res.json())

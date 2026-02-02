@@ -1,5 +1,5 @@
-const API = "http://localhost:8080/api/contacts/admin";
-
+const BASE_URL = window.location.origin;
+const API = `${BASE_URL}/api/contacts/admin`;
 // ================= LOAD DANH SÁCH =================
 function loadContacts() {
     fetch(API, {

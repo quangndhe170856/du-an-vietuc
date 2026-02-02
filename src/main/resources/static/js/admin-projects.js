@@ -6,7 +6,8 @@ if (!user || user.role !== "ADMIN") {
 }
 
 // ================= API =================
-const API = "http://localhost:8080/api/projects";
+const BASE_URL = window.location.origin;
+const API = `${BASE_URL}/api/projects`;
 
 // ================= LOAD PROJECTS =================
 function loadProjects() {
