@@ -115,7 +115,7 @@
             message: e.target[3].value
         };
 
-        fetch("http://localhost:8080/api/contacts", {
+        fetch("/api/contacts", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)
